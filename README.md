@@ -1,5 +1,4 @@
-# This repo shows my Azure and Intune works
-
+# Azure and 365
 ## [Remove-AzureADLicenses](https://github.com/vazome/Azure-and-Intune/blob/45b965b2bae73d6788b901a01f1f3b16fd1109bd/License%20Management/Remove-AzureADLicenses.ps1)
 ### Issue
 You can't remove either directly or group assigned licenses from a disabled user in bulk via GUI.
@@ -19,3 +18,7 @@ To prevent duplicate creation by [Azuew AD Connect](https://docs.microsoft.com/e
 2. Checks by samAccountName whether these users have proper UPN Suffix set in the Azure AD
 3. If instead of specified domain they have @somethinig.onmicrosoft.com it will replace it.
 
+# Intune
+## [ShortcutsWindows](https://github.com/vazome/Azure-and-Intune/blob/45b965b2bae73d6788b901a01f1f3b16fd1109bd/Intune/User%20Configuration/ShortcutsWindows.ps1)
+### Issue
+Example which deploys for Win32 and MS Store applications 
