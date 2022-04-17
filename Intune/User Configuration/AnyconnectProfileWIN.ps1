@@ -108,5 +108,5 @@ else
 		}
     Stop-Transcript | Out-Null
 }
-echo "Script deployed" | Set-Content -Path "C:\Users\adconnector1\Documents\ScriptWorked.txt" -Force
+echo "Script deployed" | Set-Content -Path "C:\Users\Public\Documents\ScriptWorked.txt" -Force
 exit $ExitCode
