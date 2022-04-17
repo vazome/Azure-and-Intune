@@ -14,4 +14,4 @@ Script does the following
     1. Removes users from the following groups.
 2. Just in case, starts license reprocess for disabled users.
 3. Checks any direct license assigments.
-    1. Removes any direct license assigments for user.
+    1. Removes any direct license assigments for disabled users.
