@@ -19,6 +19,11 @@ To prevent duplicate creation by [Azuew AD Connect](https://docs.microsoft.com/e
 3. If instead of specified domain they have @somethinig.onmicrosoft.com it will replace it.
 
 # Intune
+## [AnyconnectProfileWIN](https://github.com/vazome/Azure-and-Intune/blob/a41c68d2440fe00b1c6fb8e214b53b88eee6ee82/Intune/User%20Configuration/AnyconnectProfileWIN.ps1)
+### Issue
+It just deploys proper Cisco Anyconnect profile with your values.
+
+Frees users from headache of deploying Cisco configuration.
 ## [ShortcutsWindows](https://github.com/vazome/Azure-and-Intune/blob/45b965b2bae73d6788b901a01f1f3b16fd1109bd/Intune/User%20Configuration/ShortcutsWindows.ps1)
 ### Issue
 Example which deploys for Win32 and MS Store applications 
