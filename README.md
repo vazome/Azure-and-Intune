@@ -18,7 +18,7 @@ To prevent duplicate creation by [Azuew AD Connect](https://docs.microsoft.com/e
 2. Checks by samAccountName whether these users have proper UPN Suffix set in the Azure AD
 3. If instead of specified domain they have @somethinig.onmicrosoft.com it will replace it.
 
-# Intune
+# Intune Windows
 ## [AnyconnectProfileWIN](https://github.com/vazome/Azure-and-Intune/blob/6b8419511e63993da1c10bbaeef5f02df0dbaad8/Intune/Windows/AnyconnectProfileWIN.ps1)
 ### Issue
 It just deploys proper Cisco Anyconnect profile with your values.
@@ -27,3 +27,29 @@ Frees users from headache of deploying Cisco configuration.
 ## [ShortcutsWindows](https://github.com/vazome/Azure-and-Intune/blob/6b8419511e63993da1c10bbaeef5f02df0dbaad8/Intune/Windows/ShortcutsWindows.ps1)
 ### Issue
 Example which deploys for Win32 and MS Store applications 
+
+# Intune macOS
+## [DeployApplicationwithS3](https://github.com/vazome/Azure-and-Intune/blob/f9b946121991c6225d2162fdccc98729e3bef6f1/Intune/macOS/DeployApplicationwithS3.sh)
+### Issue
+Intune is not that great with application deployment on macOS. Often you better go with a script.
+
+But where to store the initial pkg files? Let's assume AWS S3 Bucket will be the place.
+
+One thing you want before using the script is to create IAM User with programmatic access and permissions alike:
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "DownloadIntuneApps",
+            "Effect": "Allow",
+            "Action": "s3:GetObject",
+            "Resource": [
+                "arn:aws:s3:::bucketname",
+                "arn:aws:s3:::bucketname/*"
+            ]
+        }
+    ]
+}
+```
+Add programmatic credentials into the script, this way you have control over the download.
