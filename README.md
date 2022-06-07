@@ -12,7 +12,7 @@ The script does the following:
     1. Removes any direct license assigments for disabled users.
 ## [EqualizeHybridDomains](https://github.com/vazome/Azure-and-Intune/blob/0b3acfcd3ea5fb958315c7f7275a336c934a4a91/EqualizeHybridDomains.ps1)
 ### Issue
-To prevent duplicate creation by [Azuew AD Connect](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-azure-ad-connect), this script:
+To prevent duplicate creation by [Azure AD Connect](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-azure-ad-connect), this script:
 
 1. Gets all users on-premise AD with specified UPN Suffix (user@**foo.bar.com**)
 2. Checks by samAccountName whether these users have proper UPN Suffix set in the Azure AD
