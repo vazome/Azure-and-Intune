@@ -1,4 +1,4 @@
-# Azure and 365
+# Azure and MS 365
 ## [Remove-AzureADLicenses](https://github.com/vazome/Azure-and-Intune/blob/45b965b2bae73d6788b901a01f1f3b16fd1109bd/License%20Management/Remove-AzureADLicenses.ps1)
 ### Issue
 You can't remove either directly or group assigned licenses from a disabled user in bulk via GUI.
